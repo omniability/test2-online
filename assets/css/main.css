@@ -24,7 +24,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #3c4049; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #112344; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #175cdd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #285d58; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -211,7 +211,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  /* max-height: 36px; */
   margin-right: 8px;
 }
 
@@ -515,9 +515,16 @@ h6 {
   text-decoration: none;
 }
 
-.footer-16 .brand-section .logo .sitename {
+.footer-16 .brand-section .logo {
   font-family: var(--heading-font);
   font-size: 32px;
+  font-weight: 300;
+  color: var(--heading-color);
+  letter-spacing: -0.5px;
+}
+.sitename {
+  font-family: var(--heading-font);
+  font-size: 26px!important;
   font-weight: 300;
   color: var(--heading-color);
   letter-spacing: -0.5px;
@@ -674,7 +681,7 @@ h6 {
 }
 
 .footer-16 .footer-bottom {
-  padding: 30px 0;
+  padding: 0px 0 30px;
 }
 
 .footer-16 .footer-bottom .copyright p {
@@ -699,7 +706,7 @@ h6 {
 @media (max-width: 991px) {
   .footer-16 .footer-bottom .legal-links {
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: 0px;
     flex-wrap: wrap;
   }
 }
@@ -730,7 +737,7 @@ h6 {
     padding-left: 0;
     border-left: none;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 0px;
   }
 }
 
@@ -1296,8 +1303,8 @@ section,
 }
 
 .hero .hero-visual .main-image .floating-card.rating-card {
-  bottom: 20px;
-  left: 20px;
+  top: 20px;
+  right: 20px;
   text-align: center;
   min-width: 140px;
 }
@@ -1332,8 +1339,8 @@ section,
   }
 
   .hero .hero-visual .main-image .floating-card.rating-card {
-    left: 10px;
-    bottom: 10px;
+    top: 10px;
+    right: 10px;
     padding: 1rem;
     min-width: 120px;
   }
